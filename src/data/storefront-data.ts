@@ -143,7 +143,7 @@ export const featuredProductRows: FeaturedProduct[][] = [
       image:
         'https://cdn.sanity.io/images/w8f1ak3c/production/d6a2a4be8e3063d64648773f57f5f447609a93ab-5000x5000.png/Love-Care-Pack-Expanded-Two-Good-Co.png?w=1024&h=1024&auto=format',
       name: 'The Love + CARE PACK',
-      price: '$50',
+      price: 'N50,000',
     },
     {
       id: 'righty',
@@ -151,7 +151,7 @@ export const featuredProductRows: FeaturedProduct[][] = [
       image:
         'https://cdn.sanity.io/images/w8f1ak3c/production/7a2007de38624a0b2935416bf51a4584889aa232-5000x5000.png/Website%20Products%20(12).png?w=1024&h=1024&auto=format',
       name: 'TWO GOOD TOTE BAG',
-      price: '$40',
+      price: 'N40,000',
     },
   ],
   [
@@ -161,7 +161,7 @@ export const featuredProductRows: FeaturedProduct[][] = [
       image:
         'https://cdn.sanity.io/images/w8f1ak3c/production/99866b12faf44f7490e6037dc197947334ce0a72-1408x1408.png/Nourish%20&%20Soothe%20Hand%20Lotion%20Two%20Good%20Co.png?w=1024&h=1024&auto=format',
       name: 'The Love + CARE PACK',
-      price: '$38',
+      price: 'N38,000',
     },
     {
       id: 'righty2',
@@ -169,7 +169,7 @@ export const featuredProductRows: FeaturedProduct[][] = [
       image:
         'https://cdn.sanity.io/images/w8f1ak3c/production/02240d01db2e8bdc5c630e9832ff7e0c7614f733-1876x1876.png/Cookbook-Two-Recipes-For-Resilience-Two-Good-Co.png?w=1024&h=1024&auto=format',
       name: 'TWO GOOD TOTE BAG',
-      price: '$45',
+      price: 'N45,000',
     },
   ],
 ]

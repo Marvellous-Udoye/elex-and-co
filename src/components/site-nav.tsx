@@ -22,7 +22,7 @@ export function SiteNav() {
         <div className="nav-part-2 mt-4 flex items-start gap-[70px] max-[600px]:gap-[24px] max-[500px]:mt-2 max-[500px]:items-center max-[500px]:gap-[18px]">
           {primaryNavItems.map((item) => (
             <h4
-              className="none cursor-pointer uppercase font-bold font-brand text-[var(--brand-color)] max-[1000px]:hidden"
+              className="none cursor-pointer uppercase font-semibold font-brand text-[var(--brand-color)] max-[1000px]:hidden"
               key={item.to}
             >
               <Link to={item.to}>{item.label}</Link>
@@ -43,7 +43,7 @@ export function SiteNav() {
             <button
               type="button"
               aria-label="Close menu"
-              className="border-0 font-brand cursor-pointer bg-transparent p-0 text-inherit"
+              className="border-0 font-brand font-bold cursor-pointer bg-transparent p-0 text-inherit"
             >
               X
             </button>
@@ -59,22 +59,24 @@ export function SiteNav() {
 
       <SiteContainer
         id="sub-container"
-        className="flex justify-end pt-0 leading-[50px]"
+        className="flex justify-end pt-10 leading-[50px]"
       >
         <div className="nav-part-4" />
         <div className="nav-part-5" />
         <div className="nav-part-3 pt-0 leading-[50px] max-[1000px]:leading-[40px]">
-          {overlayNavItems.map((item, index) => (
+          {overlayNavItems.map((item) => (
             <h1
               className="cursor-pointer text-end text-[50px] font-extrabold uppercase leading-[50px] text-white max-[1000px]:leading-[40px]"
               key={item.to}
             >
               <Link
                 to={item.to}
-                className="inline-flex items-center gap-2"
+                className="overlay-nav-link inline-flex items-center justify-end"
               >
-                {item.label}
-                {index === 0 ? <i className="ri-arrow-right-up-line" /> : null}
+                <span className="overlay-nav-label inline-block">{item.label}</span>
+                <span className="overlay-nav-arrow inline-flex w-0 overflow-hidden opacity-0">
+                  <i className="ri-arrow-right-up-line" />
+                </span>
               </Link>
             </h1>
           ))}

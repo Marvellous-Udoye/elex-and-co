@@ -2,7 +2,63 @@
 
 @font-face {
   font-family: 'futura';
-  src: url('./assets/Futura-Bold.ttf') format('truetype');
+  src: url('/fonts/futura/FuturaCyrillicBook.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/futura/FuturaCyrillicMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/futura/FuturaCyrillicDemi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/futura/FuturaCyrillicBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/futura/FuturaCyrillicExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/futura/FuturaCyrillicHeavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gc-milan-display';
+  src: url('/fonts/gc-milan/GCMilanHeadlineDemo-BdDisplay.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gc-milan-subhead';
+  src: url('/fonts/gc-milan/GCMilanHeadlineDemo-BdSubhead.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -15,6 +71,8 @@
 
 @theme inline {
   --font-brand: 'futura', sans-serif;
+  --font-hero: 'gc-milan-display', serif;
+  --font-editorial: 'gc-milan-subhead', serif;
   --color-brand: var(--brand-color);
   --color-page: var(--page-bg);
 }
@@ -43,7 +101,7 @@
     overflow-x: hidden;
     background-color: var(--page-bg);
     color: var(--brand-color);
-    font-family: sans-serif;
+    font-family: 'futura', sans-serif;
   }
 
   a {
@@ -66,7 +124,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: geometricPrecision;
-  font-family: 'futura', sans-serif !important;
+  font-family: 'gc-milan-display', serif !important;
 }
 
 .hero-char {

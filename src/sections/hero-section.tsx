@@ -20,11 +20,11 @@ export function HeroSection() {
           <h1
             id="course"
             data-hero-group
-            className="font-brand text-[15vw] uppercase leading-[15vw] tracking-[-10px] text-[var(--brand-color)] max-[500px]:max-w-full max-[500px]:text-[15vw] max-[500px]:leading-[14.5vw] max-[500px]:tracking-[-4px]"
+            className="font-hero text-[15vw] uppercase leading-[15vw] tracking-[-10px] text-[var(--brand-color)] max-[500px]:max-w-full max-[500px]:text-[15vw] max-[500px]:leading-[14.5vw] max-[500px]:tracking-[-4px]"
           >
             {renderAnimatedText('Elegance.')}
           </h1>
-          <h1 className="font-brand text-[15vw] uppercase leading-[15vw] tracking-[-10px] text-[var(--brand-color)] max-[500px]:max-w-full max-[500px]:text-[15vw] max-[500px]:leading-[14.5vw] max-[500px]:tracking-[-4px]">
+          <h1 className="font-hero text-[15vw] uppercase leading-[15vw] tracking-[-10px] text-[var(--brand-color)] max-[500px]:max-w-full max-[500px]:text-[15vw] max-[500px]:leading-[14.5vw] max-[500px]:tracking-[-4px]">
             <span id="the" data-hero-group className="inline-block">
               {renderAnimatedText('Luxury.')}
             </span>
