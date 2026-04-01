@@ -37,7 +37,7 @@ export function HeroSection() {
         <div className="video_container relative flex w-full cursor-pointer items-center justify-center overflow-hidden h-[42rem] max-h-[80vh] max-[800px]:h-[32rem] max-[600px]:h-[24rem] max-[500px]:h-[18rem]">
           <div
             id="play"
-            className="fixed scale-0 rounded-full bg-[var(--brand-color)] px-[3.2vw] py-[4.2vw] font-brand text-[1.2vw] uppercase text-white opacity-0 max-[500px]:absolute max-[500px]:scale-100 max-[500px]:px-[12vw] max-[500px]:py-[15vw] max-[500px]:text-[5vw] max-[500px]:opacity-100"
+            className="fixed scale-0 rounded-full bg-[var(--brand-color)] p-[3.2vw] font-brand text-[1.2vw] uppercase text-white opacity-0 max-[500px]:absolute max-[500px]:scale-100 max-[500px]:p-[12vw] max-[500px]:text-[5vw] max-[500px]:opacity-100"
           >
             PLAY
           </div>

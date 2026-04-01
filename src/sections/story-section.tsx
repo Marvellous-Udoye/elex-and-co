@@ -7,7 +7,7 @@ export function StorySection() {
       <SiteContainer className="flex w-full justify-around px-[3vw] py-[9vw] max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:justify-center max-[1000px]:gap-[60px]">
         <div className="left h-full w-[60%] max-[1000px]:flex max-[1000px]:w-full max-[1000px]:items-center max-[1000px]:justify-center">
           <h1 className="font-editorial text-[4vw] font-bold tracking-[-0.04em] max-[1000px]:text-center max-[1000px]:text-[6vw] max-[1000px]:tracking-[0]">
-            WE BELIEVE IN PEOPLE, UNTIL THEY BELIEVE IN THEMSELVES AGAIN.
+            THE RIGHT JEWELRY DOESN&apos;T JUST COMPLETE A LOOK, IT DEFINES IT
           </h1>
         </div>
 

@@ -454,6 +454,101 @@ export function createStorefrontAnimations(scope: HTMLElement) {
       }
     })
 
+    const footerSection = scope.querySelector<HTMLElement>('.footer-section')
+    if (footerSection) {
+      const footerTitle = footerSection.querySelector<HTMLElement>('.footer-title')
+      const footerSocials = footerSection.querySelectorAll<HTMLElement>(
+        '.footer-social-btn',
+      )
+      const footerColumns = footerSection.querySelectorAll<HTMLElement>(
+        '.footer-column',
+      )
+      const footerNewsletter = footerSection.querySelector<HTMLElement>(
+        '.footer-newsletter',
+      )
+      const footerCopyright = footerSection.querySelector<HTMLElement>(
+        '.copyright-box',
+      )
+
+      const footerTimeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: footerSection,
+          start: 'top 80%',
+          once: true,
+        },
+      })
+
+      if (footerTitle) {
+        footerTimeline.from(footerTitle, {
+          yPercent: 110,
+          opacity: 0,
+          duration: 1.2,
+          ease: 'power4.out',
+          clearProps: 'transform,opacity',
+        })
+      }
+
+      if (footerSocials.length) {
+        footerTimeline.from(
+          footerSocials,
+          {
+            y: 36,
+            scale: 0.9,
+            opacity: 0,
+            duration: 0.65,
+            stagger: 0.1,
+            ease: 'back.out(1.4)',
+            clearProps: 'transform,opacity',
+          },
+          '-=0.5',
+        )
+      }
+
+      if (footerColumns.length) {
+        footerTimeline.from(
+          footerColumns,
+          {
+            y: 44,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.12,
+            ease: 'power3.out',
+            clearProps: 'transform,opacity',
+          },
+          '-=0.35',
+        )
+      }
+
+      if (footerNewsletter) {
+        footerTimeline.from(
+          footerNewsletter,
+          {
+            y: 44,
+            opacity: 0,
+            duration: 0.85,
+            ease: 'power3.out',
+            clearProps: 'transform,opacity',
+          },
+          '-=0.55',
+        )
+      }
+
+      if (footerCopyright) {
+        footerTimeline.from(
+          footerCopyright.children,
+          {
+            y: 20,
+            opacity: 0,
+            duration: 0.55,
+            stagger: 0.08,
+            ease: 'power2.out',
+            clearProps: 'transform,opacity',
+          },
+          '-=0.2',
+        )
+      }
+    }
+
       return () => {
       videoContainer?.removeEventListener('mouseenter', showPlay)
       videoContainer?.removeEventListener('mouseleave', hidePlay)
