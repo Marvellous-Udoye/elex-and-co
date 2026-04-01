@@ -20,24 +20,14 @@ export function FeaturedProductsSection() {
                   className="w-[80%] max-[1000px]:w-full max-[600px]:max-w-[400px]"
                 />
                 <div id="details" className="flex flex-col items-center justify-center">
-                  <p className="text-[12px]">{product.name}</p>
-                  <p className="text-[12px]">{product.price}</p>
+                  <p className="text-base">{product.name}</p>
+                  <p className="text-sm">{product.price}</p>
                 </div>
               </div>
             ))}
           </SiteContainer>
         </section>
       ))}
-
-      <div className="line2 py-[2vw]">
-        <SiteContainer>
-          <div id="headings" className="flex justify-between">
-            <p className="text-[12px]">WORDS OF GOODNESS</p>
-            <p className="text-[12px]">MESSAGE OF LOVE SUPPORT</p>
-          </div>
-          <hr />
-        </SiteContainer>
-      </div>
     </>
   )
 }
