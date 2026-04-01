@@ -66,6 +66,18 @@ nav .nav-part-1 {
   gap: 15px;
 }
 
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  font-family: futura, sans-serif;
+  font-size: 2.25rem;
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 nav .container {
   padding: 1.5vw 2vw;
   display: flex;
@@ -116,14 +128,15 @@ nav #sub-container {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .page-1 h1,
 .page-1 #the,
 #course-head {
   text-transform: uppercase;
-  font-size: 16vw;
+  font-size: 15vw;
   line-height: 15vw;
   font-family: futura, sans-serif;
   letter-spacing: -10px;
@@ -133,6 +146,32 @@ nav #sub-container {
 #head,
 #head * {
   font-family: futura, sans-serif !important;
+  color: #000 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+#head {
+  overflow: visible;
+  perspective: 500px;
+}
+
+.hero-char {
+  display: inline-block;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  color: #000;
+}
+
+#the {
+  display: inline-block;
+}
+
+#course-head {
+  display: block;
 }
 
 #cursor {
@@ -150,12 +189,16 @@ nav #sub-container {
   position: relative;
   cursor: pointer;
   width: 100%;
+  height: 42rem;
+  max-height: 80vh;
+  overflow: hidden;
 }
 
 .video_container video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #000;
 }
 
 .video_container #play {
@@ -196,6 +239,8 @@ nav #sub-container {
 .page-2 .elem {
   height: 100%;
   width: 32%;
+  position: relative;
+  overflow: hidden;
 }
 
 .page-2 .elem > img {
@@ -207,25 +252,35 @@ nav #sub-container {
 
 .elem .purchase {
   overflow: hidden;
-  position: relative;
-  top: -50%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 50px;
+  height: 56px;
+  min-height: 56px;
   width: 80%;
   border-radius: 30px;
-  transition: all 0.4s ease-in-out;
+  z-index: 2;
+  transition:
+    height 0.45s ease,
+    border-radius 0.45s ease,
+    box-shadow 0.45s ease,
+    transform 0.45s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .elem .purchase:hover {
-  height: 50%;
+  height: min(300px, 56%);
   cursor: pointer;
+  border-radius: 26px;
 }
 
 .elem .nav {
-  margin-top: 18px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 56px;
+  padding: 0 18px;
 }
 
 .elem .circle {
@@ -246,7 +301,19 @@ nav #sub-container {
 .elem .sub-purchase {
   display: flex;
   justify-content: space-around;
-  margin-top: 15px;
+  margin-top: 8px;
+  padding: 8px 18px 18px;
+  gap: 18px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.35s ease;
+}
+
+.elem .purchase:hover .sub-purchase {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .elem .sub-purchase .left-purchase,
@@ -357,6 +424,28 @@ nav #sub-container {
     width: 100%;
   }
 
+  .elem .purchase {
+    position: relative;
+    top: -50%;
+    min-height: 50px;
+    height: 50px;
+    box-shadow: none;
+  }
+
+  .elem .nav {
+    height: auto;
+    margin-top: 18px;
+    padding: 0;
+  }
+
+  .elem .sub-purchase {
+    margin-top: 15px;
+    padding: 0 0 18px;
+    gap: 0;
+    opacity: 1;
+    transform: none;
+  }
+
   .page-2 {
     display: flex;
     flex-direction: column;
@@ -433,9 +522,17 @@ nav #sub-container {
   .page-1 .container {
     padding-top: 10vw;
   }
+
+  .video_container {
+    height: 32rem;
+  }
 }
 
 @media (max-width: 600px) {
+  .video_container {
+    height: 24rem;
+  }
+
   .nav-part-2 {
     gap: 24px;
   }
@@ -505,13 +602,17 @@ nav #sub-container {
   .page-1 h1,
   .page-1 #the,
   #course-head {
-    font-size: 15.5vw;
+    font-size: 15vw;
     line-height: 14.5vw;
     max-width: 100%;
   }
 
   .page-1 #the {
     letter-spacing: -5px;
+  }
+
+  .wordmark {
+    font-size: 1.5rem;
   }
 
   .page-1 h1,
@@ -533,6 +634,7 @@ nav #sub-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 18rem;
   }
 
   .video_container #play {
