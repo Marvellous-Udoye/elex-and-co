@@ -27,9 +27,9 @@ export type FeaturedProduct = {
 }
 
 export const homeMetadata: PageMetadata = {
-  title: 'ELEX & CO | Jewelry Storefront',
+  title: 'ilhhamstores | Jewelry Storefront',
   description:
-    'ELEX & CO is a modern jewelry storefront experience focused on elegance, luxury, and expression.',
+    'ilhhamstores is a modern jewelry storefront experience focused on elegance, luxury, and expression.',
   path: '/',
 }
 
@@ -40,8 +40,8 @@ export function placeholderMetadata(slug: string): PageMetadata {
     .join(' ')
 
   return {
-    title: `${title} | ELEX & CO`,
-    description: `${title} page scaffold for the ELEX & CO storefront.`,
+    title: `${title} | ilhhamstores`,
+    description: `${title} page scaffold for the ilhhamstores storefront.`,
     path: `/${slug}`,
   }
 }
@@ -59,8 +59,8 @@ export const overlayNavItems: NavItem[] = [
   { label: 'men', to: '/men' },
   { label: 'about', to: '/about' },
   { label: 'contact', to: '/contact' },
-  { label: 'register', to: '/register' },
-  { label: 'sign in', to: '/sign-in' },
+  // { label: 'register', to: '/register' },
+  // { label: 'sign in', to: '/sign-in' },
 ]
 
 export const purchaseCards: PurchaseCard[] = [

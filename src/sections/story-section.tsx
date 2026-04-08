@@ -13,7 +13,7 @@ export function StorySection() {
 
         <div className="right flex h-full w-[25%] flex-col gap-[40px] max-[1000px]:w-full max-[1000px]:items-center max-[1000px]:justify-center max-[1000px]:text-center">
           <p>
-            Every piece at ELEX &amp; CO is chosen to reflect quiet luxury,
+            Every piece at ilhhamstores is chosen to reflect quiet luxury,
             refined craftsmanship, and the confidence of timeless design.
           </p>
           <p>
