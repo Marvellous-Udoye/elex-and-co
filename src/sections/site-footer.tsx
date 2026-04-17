@@ -14,7 +14,8 @@ const footerColumns = [
   },
   {
     title: 'Maison',
-    items: ['About ilhhamstores', 'Contact', 'Private Appointments'],
+    // items: ['About ilhhamstores', 'Contact', 'Private Appointments'],
+    items: ['About store', 'Contact', 'Private Appointments'],
   },
 ]
 
@@ -24,7 +25,8 @@ export function SiteFooter() {
       <div className="relative pt-[10vh] xl:min-h-[110vh]">
         <div className="overflow-hidden">
           <h1 className="footer-title font-hero py-5 text-center text-[clamp(3rem,9vw,8rem)] uppercase leading-[0.95] tracking-[-0.05em] text-[#f4efe8]">
-            #ILHAMSTORES
+            {/* #ILHAMSTORES */}
+            #STORE
           </h1>
         </div>
 
@@ -83,7 +85,8 @@ export function SiteFooter() {
         </SiteContainer>
 
         <SiteContainer className="copyright-box flex flex-col gap-5 px-5 pb-10 pt-6 text-sm text-[#f4efe8]/70 md:flex-row md:items-center md:justify-between md:px-10">
-          <p>Copyright © 2026 ilhhamstores. All Rights Reserved</p>
+          {/* <p>Copyright © 2026 ilhhamstores. All Rights Reserved</p> */}
+          <p>Copyright © 2026 store. All Rights Reserved</p>
           <div className="flex items-center gap-7">
             <Link to="/privacy-policy">Privacy Policy</Link>
             <Link to="/terms-of-service">Terms of Service</Link>

@@ -27,9 +27,11 @@ export type FeaturedProduct = {
 }
 
 export const homeMetadata: PageMetadata = {
-  title: 'ilhhamstores | Jewelry Storefront',
+  // title: 'ilhhamstores | Jewelry Storefront',
+  title: 'store | Jewelry Storefront',
   description:
-    'ilhhamstores is a modern jewelry storefront experience focused on elegance, luxury, and expression.',
+    // 'ilhhamstores is a modern jewelry storefront experience focused on elegance, luxury, and expression.',
+    'store is a modern jewelry storefront experience focused on timeless pieces, refined styling, and everyday confidence.',
   path: '/',
 }
 
@@ -40,8 +42,10 @@ export function placeholderMetadata(slug: string): PageMetadata {
     .join(' ')
 
   return {
-    title: `${title} | ilhhamstores`,
-    description: `${title} page scaffold for the ilhhamstores storefront.`,
+    // title: `${title} | ilhhamstores`,
+    title: `${title} | store`,
+    // description: `${title} page scaffold for the ilhhamstores storefront.`,
+    description: `${title} page scaffold for the store storefront.`,
     path: `/${slug}`,
   }
 }

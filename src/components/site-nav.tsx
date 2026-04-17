@@ -14,8 +14,9 @@ export function SiteNav() {
             to="/"
             className="wordmark flex flex-col font-brand text-[2.25rem] font-bold uppercase leading-[0.9] tracking-[-0.08em] text-[var(--brand-color)] max-[500px]:text-[1.5rem]"
           >
-            <span>ILHHAM</span>
-            <span>STORES</span>
+            {/* <span>ILHHAM</span>
+            <span>STORES</span> */}
+            <span>STORE</span>
           </Link>
         </div>
 

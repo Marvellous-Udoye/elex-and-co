@@ -43,9 +43,13 @@ export function HeroSection() {
           </div> */}
           <img
             id={"hero section"}
-            src={"/hero-bg.png"}
-            alt={"Ilham Store"}
-            className="h-full w-full bg-black object-cover object-bottom"
+            // src={"/hero-bg.png"}
+            src={
+              "https://images.pexels.com/photos/35270128/pexels-photo-35270128.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            }
+            // alt={"Ilham Store"}
+            alt={"Jewelry storefront hero"}
+            className="h-full w-full bg-black object-contain object-bottom"
           />
         </div>
       </div>
